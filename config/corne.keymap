@@ -59,6 +59,12 @@
             key-positions = <38 12>;
             slow-release;
         };
+
+        test3 {
+            bindings = <&mo 6>;
+            key-positions = <38>;
+            layers = <5>;
+        };
     };
 
     behaviors {
