@@ -142,6 +142,8 @@
             compatible = "zmk,behavior-toggle-layer";
             label = "TOG_ON";
             #binding-cells = <1>;
+            toggle-mode = "on";
+            locking;
         };
 
         tog_off: tog_off {
@@ -149,6 +151,7 @@
             label = "TOG_OFF";
             #binding-cells = <1>;
             toggle-mode = "off";
+            locking;
         };
     };
 
