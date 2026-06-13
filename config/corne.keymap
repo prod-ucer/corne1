@@ -49,13 +49,13 @@
         };
 
         left_num_layer {
-            bindings = <&mo 2>;
+            bindings = <&mo 1>;
             key-positions = <38 24>;
             slow-release;
         };
 
         left_arrow_layer {
-            bindings = <&mo 1>;
+            bindings = <&mo 2>;
             key-positions = <38 12>;
             slow-release;
         };
@@ -153,21 +153,21 @@
             >;
         };
 
+        left_num_and_ultilities {
+            bindings = <
+&kp ESCAPE  &kp GRAVE  &td_kp7_f7  &td_kp8_f8  &td_kp9_f9  &kp LBKT      &trans  &trans  &trans  &trans  &trans  &trans
+&kp M       &kp EQUAL  &td_kp4_f4  &td_kp5_f5  &td_kp6_f6  &kp RBKT      &trans  &trans  &trans  &trans  &trans  &trans
+&to 0       &kp MINUS  &td_kp1_f1  &td_kp2_f2  &td_kp3_f3  &td_kp0_f0    &trans  &trans  &trans  &trans  &trans  &trans
+                                   &trans      &trans      &trans        &trans  &trans  &trans
+            >;
+        };
+
         left_arrow {
             bindings = <
 &trans  &trans  &trans    &kp UP    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
                           &trans    &trans     &trans    &trans  &trans  &trans
-            >;
-        };
-
-        left_num_and_ultilities {
-            bindings = <
-&kp ESCAPE  &kp GRAVE  &td_kp7_f7  &td_kp8_f8  &td_kp9_f9  &kp LBKT      &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp EQUAL  &td_kp4_f4  &td_kp5_f5  &td_kp6_f6  &kp RBKT      &trans  &trans  &trans  &trans  &trans  &trans
-&kp M       &kp MINUS  &td_kp1_f1  &td_kp2_f2  &td_kp3_f3  &td_kp0_f0    &trans  &trans  &trans  &trans  &trans  &trans
-                                   &trans      &trans      &trans        &trans  &trans  &trans
             >;
         };
 
@@ -221,7 +221,7 @@
             bindings = <
 &kp TAB  &kp N1  &kp N2  &kp N3  &kp LS(N4)  &kp P            &trans  &trans  &trans  &trans  &trans  &trans
 &trans   &kp N5  &kp N6  &kp N7  &trans      &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans      &kp LS(ENTER)    &trans  &trans  &trans  &trans  &trans  &trans
+&to 0    &trans  &trans  &trans  &trans      &kp LS(ENTER)    &trans  &trans  &trans  &trans  &trans  &trans
                          &trans  &trans      &trans           &trans  &trans  &trans
             >;
         };
@@ -232,7 +232,7 @@
 &kp TAB    &kp Q  &kp E  &kp W     &kp R      &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &kp SQT
 &kp LSHFT  &kp F  &kp A  &kp S     &kp D      &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp BACKSPACE
 &kp LCTRL  &kp Z  &kp X  &kp C     &kp V      &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &kp SPACE  &mo 2    &mo 4  &kp ENTER  &trans
+                         &kp LGUI  &kp SPACE  &mo 1    &mo 4  &kp ENTER  &trans
             >;
         };
 
