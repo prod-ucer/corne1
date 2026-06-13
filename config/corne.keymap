@@ -199,10 +199,10 @@
 
         left_num_and_ultilities {
             bindings = <
-&kp ESCAPE  &kp GRAVE  &td_kp7_f7  &td_kp8_f8  &td_kp9_f9  &kp LBKT      &trans  &trans  &trans  &trans  &trans  &trans
-&kp M       &kp EQUAL  &td_kp4_f4  &td_kp5_f5  &td_kp6_f6  &kp RBKT      &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp MINUS  &td_kp1_f1  &td_kp2_f2  &td_kp3_f3  &td_kp0_f0    &trans  &trans  &trans  &trans  &trans  &trans
-                                   &trans      &trans      &trans        &trans  &trans  &trans
+&kp ESCAPE  &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp LBKT    &trans  &trans  &trans  &trans  &trans  &trans
+&kp M       &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp RBKT    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp MINUS  &kp N1  &kp N2  &kp N3  &kp N0      &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans  &trans  &trans      &trans  &trans  &trans
             >;
         };
 
