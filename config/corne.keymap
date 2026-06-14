@@ -190,19 +190,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y  &kp U      &kp I      &kp O    &kp P     &kp SQT
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp BACKSPACE
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 3  &kp SPACE    &mo 4  &kp ENTER  &trans
+&kp TAB    &kp Q  &kp W  &kp E     &kp R      &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &kp SQT
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F      &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp BACKSPACE
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &kp SPACE  &mo 3    &mo 4  &kp ENTER  &trans
             >;
         };
 
         left_num_and_ultilities {
             bindings = <
-&kp ESCAPE  &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp LBKT    &trans  &trans  &trans  &trans  &trans  &trans
-&kp M       &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp RBKT    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp MINUS  &kp N1  &kp N2  &kp N3  &kp N0      &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans  &trans  &trans      &trans  &trans  &trans
+&kp ESCAPE  &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp LBKT    &trans  &kp F7  &kp F8   &kp F9  &trans  &trans
+&kp M       &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp RBKT    &trans  &kp F4  &kp F5   &kp F6  &trans  &trans
+&trans      &kp MINUS  &kp N1  &kp N2  &kp N3  &kp N0      &trans  &kp F1  &kp F2   &kp F3  &trans  &trans
+                               &trans  &trans  &trans      &trans  &trans  &kp F10
             >;
         };
 
@@ -217,10 +217,10 @@
 
         lower_layer {
             bindings = <
-&tog 0  &kp LC(LS(TAB))  &kp LC(TAB)  &kp TAB    &kp ESC    &kp DEL      &kp GRAVE  &td_kp7_f7  &td_kp8_f8  &td_kp9_f9  &kp LBKT  &trans
-&tog 7  &kp CAPS         &kp LALT     &kp LCTRL  &kp LSHFT  &kp ENTER    &kp EQUAL  &td_kp4_f4  &td_kp5_f5  &td_kp6_f6  &kp RBKT  &trans
-&tog 5  &kp F11          &kp F12      &kp LC(C)  &kp LC(V)  &kp LGUI     &kp MINUS  &td_kp1_f1  &td_kp2_f2  &td_kp3_f3  &kp BSLH  &trans
-                                      &trans     &trans     &trans       &trans     &trans      &td_kp0_f0
+&tog 0  &kp LC(LS(TAB))  &kp LC(TAB)  &kp TAB    &kp ESC    &kp DEL          &kp GRAVE  &kp N7  &kp N8  &kp N9  &kp LBKT  &trans
+&tog 7  &kp CAPS         &kp LALT     &kp LCTRL  &kp LSHFT  &kp LC(SPACE)    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp RBKT  &trans
+&tog 5  &kp F11          &kp F12      &kp LC(C)  &kp LC(V)  &kp LGUI         &kp MINUS  &kp N1  &kp N2  &kp N3  &kp BSLH  &trans
+                                      &trans     &trans     &trans           &trans     &trans  &kp N0
             >;
 
             label = "Lower Layer";
@@ -246,10 +246,10 @@
         game_lol_default {
             display-name = "Game LoL default";
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp E   &kp R            &kp T        &kp Y  &kp U      &kp I      &kp O    &kp P     &kp SQT
-&kp LCTRL   &kp A  &kp S  &kp D   &kp F            &kp G        &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp BACKSPACE
-&kp ESCAPE  &kp Z  &kp X  &kp C   &kp V            &kp B        &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                          &tog 5  &lol_lower_hold  &kp SPACE    &mo 4  &kp ENTER  &trans
+&kp TAB     &kp Q  &kp W  &kp E   &kp R      &kp T              &kp Y  &kp U      &kp I      &kp O    &kp P     &kp SQT
+&kp LCTRL   &kp A  &kp S  &kp D   &kp F      &kp G              &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp BACKSPACE
+&kp ESCAPE  &kp Z  &kp X  &kp C   &kp V      &kp B              &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                          &tog 5  &kp SPACE  &lol_lower_hold    &mo 4  &kp ENTER  &trans
             >;
         };
 
@@ -273,10 +273,10 @@
         game_wasd_default {
             display-name = "Game WASD default";
             bindings = <
-&kp TAB         &kp Q  &kp E  &kp W   &kp R             &kp T        &kp Y  &kp U      &kp I      &kp O    &kp P     &kp SQT
-&kp LCTRL       &kp F  &kp A  &kp S   &kp D             &kp G        &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp BACKSPACE
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C   &kp V             &kp B        &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                              &tog 7  &wasd_lower_hold  &kp SPACE    &mo 4  &kp ENTER  &trans
+&kp TAB         &kp Q  &kp E  &kp W   &kp R      &kp T               &kp Y  &kp U      &kp I      &kp O    &kp P     &kp SQT
+&kp LCTRL       &kp F  &kp A  &kp S   &kp D      &kp G               &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp BACKSPACE
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C   &kp V      &kp B               &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                              &tog 7  &kp SPACE  &wasd_lower_hold    &mo 4  &kp ENTER  &trans
             >;
         };
 
